@@ -2,6 +2,6 @@
     <string name="app_name">EXWeather</string>
     <string name="titleBarName">EXWeather</string>
     <string name="titleDescription">Fastest         Tracker</string>
-    <string name="menuTitle1">Multiple Countries View</string>
+    <string name="menuTitle1">Possible Location Names</string>
     <string name="menuTitle2">Settings</string>
 </resources>

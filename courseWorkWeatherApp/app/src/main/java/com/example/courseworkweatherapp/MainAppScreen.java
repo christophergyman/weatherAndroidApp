@@ -129,7 +129,6 @@ public class MainAppScreen extends AppCompatActivity {
 
                 // Add the request to the RequestQueue.
                 queue.add(stringRequest);
-//                Toast.makeText(MainActivity.this, "You clicked me", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -149,19 +148,13 @@ public class MainAppScreen extends AppCompatActivity {
         switch(item.getItemId()){
             case R.id.item1:
                 Toast.makeText(this, "Multiple Country View", Toast.LENGTH_SHORT).show();
-
-
-
-
+                openMultipleViewActivity();
                 return true;
 
             case R.id.item2:
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
-
                 //Intent to start settings activity
                 openSettingsActivity();
-
-
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -171,6 +164,12 @@ public class MainAppScreen extends AppCompatActivity {
     private void openSettingsActivity() {
         Intent intentSettings = new Intent(this, settingsActivity.class);
         startActivity(intentSettings);
+    }
+
+    private void openMultipleViewActivity(){
+        Intent intentMultipleviewActivity = new Intent(this, multipleViewActivity.class);
+        startActivity(intentMultipleviewActivity);
+
     }
 
 

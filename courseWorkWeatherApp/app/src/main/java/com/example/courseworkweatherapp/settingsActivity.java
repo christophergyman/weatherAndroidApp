@@ -65,7 +65,7 @@ public class settingsActivity extends AppCompatActivity {
     public void updateViews(){
        String str = getDefaults("defaultCountry", this);
        defaultCountryTextView.setText(str);
-       Toast.makeText(this, "Default Location: " + str, Toast.LENGTH_SHORT).show();
+//       Toast.makeText(this, "Default Location: " + str, Toast.LENGTH_SHORT).show();
     }
 
 

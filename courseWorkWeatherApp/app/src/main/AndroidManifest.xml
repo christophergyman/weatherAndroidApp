@@ -14,6 +14,9 @@
         android:theme="@style/Theme.CourseWorkWeatherApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".multipleViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".settingsActivity"
             android:exported="false" />
         <activity

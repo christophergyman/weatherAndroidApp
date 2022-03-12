@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Showing shard pref on startup
-        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        String str = (sharedPreferences.getString("defaultCountry", "Default_Value"));
-        Toast.makeText(this, "SavedPref: " + str, Toast.LENGTH_SHORT).show();
+//        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+//        String str = (sharedPreferences.getString("defaultCountry", "Default_Value"));
+//        Toast.makeText(this, "SavedPref: " + str, Toast.LENGTH_SHORT).show();
 
         button = (Button) findViewById(R.id.startButton);
         button.setOnClickListener(new View.OnClickListener() {

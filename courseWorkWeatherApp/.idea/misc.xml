@@ -5,7 +5,10 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_main_app_screen.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_multiple_view.xml" value="0.340625" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/list_items.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/my_row.xml" value="0.67" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.25" />
       </map>
     </option>
