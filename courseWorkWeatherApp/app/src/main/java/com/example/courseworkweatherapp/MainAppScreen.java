@@ -147,7 +147,15 @@ public class MainAppScreen extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case R.id.item1:
-                Toast.makeText(this, "Multiple Country View", Toast.LENGTH_SHORT).show();
+
+
+                //HERE READ DEFAULT LOCATION SET
+                //Showing shard pref on startup
+                final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+                String locationRequest= (sharedPreferences.getString("defaultCountry", "Default_Value"));
+
+
+                Toast.makeText(this, "Current Location Set: " + locationRequest, Toast.LENGTH_SHORT).show();
                 openMultipleViewActivity();
                 return true;
 

@@ -44,6 +44,8 @@
         android:layout_height="wrap_content"
         android:text="Save Settings"
         android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:backgroundTint="#AD8B73"
         />
 
     <TextView

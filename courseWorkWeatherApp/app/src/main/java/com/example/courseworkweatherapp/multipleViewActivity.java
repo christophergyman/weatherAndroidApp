@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,10 +43,20 @@ public class multipleViewActivity extends AppCompatActivity {
                 "Canada",
                 "Japan",
                 "Korea",
+                "Ireland",
+                "New Zealand",
+                "Jamaica",
+                "Australia",
+                "India",
         };
 
 
         String[] countryTempArray= {
+                "",
+                "",
+                "",
+                "",
+                "",
                 "",
                 "",
                 "",
