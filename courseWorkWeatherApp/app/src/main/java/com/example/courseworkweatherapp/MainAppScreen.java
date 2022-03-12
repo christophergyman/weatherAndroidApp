@@ -155,7 +155,7 @@ public class MainAppScreen extends AppCompatActivity {
                 String locationRequest= (sharedPreferences.getString("defaultCountry", "Default_Value"));
 
 
-                Toast.makeText(this, "Current Location Set: " + locationRequest, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "Current Location Set: " + locationRequest, Toast.LENGTH_SHORT).show();
                 openMultipleViewActivity();
                 return true;
 
@@ -175,7 +175,16 @@ public class MainAppScreen extends AppCompatActivity {
     }
 
     private void openMultipleViewActivity(){
+        //open multiple view activity and pass throuh extras
+        // while doing it to meet explicit/implicit intents
+
+        //Grab default country location from shared preferences:
+        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        String locationRequest= (sharedPreferences.getString("defaultCountry", "Default_Value"));
+
         Intent intentMultipleviewActivity = new Intent(this, multipleViewActivity.class);
+        intentMultipleviewActivity.putExtra("locationRequest", locationRequest);
+
         startActivity(intentMultipleviewActivity);
 
     }

@@ -71,6 +71,17 @@ public class multipleViewActivity extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter(this, countryNamesArray, countryTempArray);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+
+        //Retreieve Extras intent and use toast
+        Bundle extras = getIntent().getExtras();
+        if (extras != null){
+            String locationRequest= extras.getString("locationRequest");
+            Toast.makeText(this, "Current Location Set: " + locationRequest, Toast.LENGTH_SHORT).show();
+        }
+
+
+
     }
 
 }
