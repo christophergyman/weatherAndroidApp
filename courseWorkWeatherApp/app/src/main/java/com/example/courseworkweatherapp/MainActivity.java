@@ -13,20 +13,19 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private Button button;
 
+    //On create function, function that is called when the activity is loaded in.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        //Showing shard pref on startup
-//        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-//        String str = (sharedPreferences.getString("defaultCountry", "Default_Value"));
-//        Toast.makeText(this, "SavedPref: " + str, Toast.LENGTH_SHORT).show();
-
+        //Attaching the button elements with their R ID's
         button = (Button) findViewById(R.id.startButton);
+
+        //Creating an onclick listener for the button
         button.setOnClickListener(new View.OnClickListener() {
             @Override
+            //The on the button click call the function openMainActivity
             public void onClick(View view) {
                 openMainActivity();
             }
@@ -35,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    //Called when button is clicked, creates intent to open main activity screen
     private void openMainActivity() {
         Intent intent = new Intent(this, MainAppScreen.class);
         startActivity(intent);

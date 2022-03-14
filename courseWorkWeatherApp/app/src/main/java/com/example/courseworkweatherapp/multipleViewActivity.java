@@ -25,16 +25,19 @@ import java.util.ArrayList;
 
 public class multipleViewActivity extends AppCompatActivity {
 
+    //Assining variables that will be used later
     RecyclerView recyclerView;
     ArrayList<String> countryNamesArraylist;
     private String[] countryNamesArray, CountryTempArray;
     TextView names1, names2;
 
+    //On create function, function that is called when the activity is loaded in.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiple_view);
 
+        //List of some random countries the user will see
         String[] countryNamesArray = {
                 "London",
                 "Hong Kong",
@@ -51,6 +54,7 @@ public class multipleViewActivity extends AppCompatActivity {
         };
 
 
+        //Initialise empty string array with certain elements
         String[] countryTempArray= {
                 "",
                 "",
@@ -67,20 +71,20 @@ public class multipleViewActivity extends AppCompatActivity {
         };
 
 
+        //create recycler view entity and attach it to the view with its R id
         recyclerView = findViewById(R.id.recyclerView);
         MyAdapter myAdapter = new MyAdapter(this, countryNamesArray, countryTempArray);
+        //Set the recycler views adapter
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
-        //Retreieve Extras intent and use toast
+        //Retrieve Extras intent and use toast to see current location
         Bundle extras = getIntent().getExtras();
         if (extras != null){
             String locationRequest= extras.getString("locationRequest");
             Toast.makeText(this, "Current Location Set: " + locationRequest, Toast.LENGTH_SHORT).show();
         }
-
-
 
     }
 
