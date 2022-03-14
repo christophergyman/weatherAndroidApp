@@ -3,8 +3,11 @@ package com.example.courseworkweatherapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -26,6 +29,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainAppScreen extends AppCompatActivity {
+    Context context;
     TextView textView, countryNameTextView, locationTempTextView,
             localConditionTextView, localTimeTextView;
     private Button button;
@@ -36,8 +40,6 @@ public class MainAppScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_app_screen);
-
-
 
 //        Assign screen elements objects to their ID's
 
