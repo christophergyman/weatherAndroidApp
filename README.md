@@ -20,7 +20,7 @@ Found within the project are
 * * Includes a writeup of the application 
 
 
-Alongside the tests which can be found within the tests directory
+Alongside with the rest of the code which can be find within the apps directory
 
 ## Contributing
 Please feel free to contribute to this project, since this is an open source project contributions made are appreciated.
@@ -32,11 +32,12 @@ Please feel free to contribute to this project, since this is an open source pro
 
 ## Contact
 Christopher Man 
-- [christophergayiuman@gmail.com](christophergayiuman@gmail.com)
-- [cgym201@exeter.ac.uk](cgym201@exeter.ac.uk)
+- [christophergayiuman@gmail.com](christophermanwork@gmail.com)
+- [https://www.linkedin.com/in/christophergayiuman/](https://www.linkedin.com/in/christophergayiuman/)
 
-Project Link: [https://github.com/christophergayiuman/JavaThreading](https://github.com/christophergayiuman/JavaThreading)
+Project Link: [https://github.com/christophergayiuman/weatherAndroidApp](https://github.com/christophergayiuman/JavaThreading)
 
 ## Acknowledgements
 * [Github Template Guide](https://github.com/othneildrew/Best-README-Template)
 * [Mastering Github Markdown](https://guides.github.com/features/mastering-markdown/)
+* [https://www.weatherapi.com/](https://www.weatherapi.com/)
